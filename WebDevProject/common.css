@@ -1,0 +1,95 @@
+body {
+  margin: 0px 0px 0px 0px;
+  text-align: center;
+  opacity: 1;
+  --s: 24px;
+  --m: 2px;
+
+  --v1: #00ff77 119.5deg, #00000000 120.5deg;
+  --v2: #ffffff 119.5deg, #00ccb100 120.5deg;
+ background:
+    conic-gradient(at var(--m)calc(var(--s)*0.5777), transparent 270deg, #ffffff 0deg),
+    conic-gradient(at calc(100% - var(--m)) calc(var(--s)*0.5777), #ffffff 90deg, transparent 0deg),
+    conic-gradient(from -60deg at 50% calc(var(--s)*0.8662), var(--v1)),
+    conic-gradient(from -60deg at 50% calc(var(--s)*0.8662 + 2*var(--m)), var(--v2)),
+    conic-gradient(from 120deg at 50% calc(var(--s)*1.4435 + 3*var(--m)), var(--v1)),
+    conic-gradient(from 120deg at 50% calc(var(--s)*1.4435 + var(--m)), var(--v2)),
+    linear-gradient(90deg, #c0fcdc calc(50% - var(--m)), #ffffff 0 calc(50% + var(--m)), #00ff77 0);
+  background-size: calc(var(--s) + 2*var(--m)) calc(var(--s)*1.732 + 3*var(--m));
+}
+
+#header {
+  padding: 0px 20px 20px 10px;
+  position: absolute;
+  color: rgb(0, 103, 55);
+  font-size: large;
+  text-align-last: left;
+  text-align-last: center;
+  font: icon;
+  font-style: italic;
+  text-decoration: unset;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  margin-top: 0;
+  font-weight: lighter;
+  font-family: cursive;
+  z-index: 1;
+  box-shadow: -5px 10px 20px rgba(0, 0, 0, 0.7);
+  background: linear-gradient(-90deg, rgba(0, 229, 183, 0), 30%, rgb(255, 255, 255));
+}
+
+.logo {
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 10px;
+  float: left;
+  width: 70px;
+  height: auto;
+  max-width: 13%;
+}
+
+.mast {
+  margin-top: 10px;
+  margin-left: 0px;
+  float: left;
+  width: 200px;
+  height: auto;
+  max-width: 25%;
+}
+
+.searchbar {
+  margin-left: 0px;
+  margin-top: 5px;
+  padding: 0 0 0 0;
+  float: left;
+  color: rgba(240, 248, 255, 0.245);
+  display: flex;
+}
+
+.resizable {
+  color: aliceblue;
+  background-color: rgba(255, 228, 196, 0.8);
+  padding-left: 10px;
+  font-size: medium;
+  flex: 2;
+  resize: both;
+  overflow: auto;
+  min-width: 30%;
+  max-width: 650px;
+  min-height: 10%;
+  max-height: 40px;
+  width: 100%;
+  border-radius: 50px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  float: right;
+  color: #678501;
+  width: 70px;
+  height: 30px;
+}

@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  opacity: 1;
+  background-color: #0a0af9;
+  --s: 24px;
+  --m: 2px;
+
+  --v1: #00ff77 119.5deg, #00000000 120.5deg;
+  --v2: #ffffff 119.5deg, #00ccb100 120.5deg;
+  background:
+    conic-gradient(at var(--m)calc(var(--s)*0.5777), transparent 270deg, #ffffff 0deg),
+    conic-gradient(at calc(100% - var(--m)) calc(var(--s)*0.5777), #ffffff 90deg, transparent 0deg),
+    conic-gradient(from -60deg at 50% calc(var(--s)*0.8662), var(--v1)),
+    conic-gradient(from -60deg at 50% calc(var(--s)*0.8662 + 2*var(--m)), var(--v2)),
+    conic-gradient(from 120deg at 50% calc(var(--s)*1.4435 + 3*var(--m)), var(--v1)),
+    conic-gradient(from 120deg at 50% calc(var(--s)*1.4435 + var(--m)), var(--v2)),
+    linear-gradient(90deg, #00ff77 calc(50% - var(--m)), #ffffff 0 calc(50% + var(--m)), #00ff77 0);
+  background-size: calc(var(--s) + 2*var(--m)) calc(var(--s)*1.732 + 3*var(--m));
+}
+
+.container {
+  max-width: 400px;
+  margin: 10% auto;
+  background-color: rgba(0, 0, 250, 0.1);
+  background-color: #e5e5f7;
+  background-image: linear-gradient(135deg, #ffffff 25%, transparent 25%), linear-gradient(225deg, #ffffff 25%, transparent 25%), linear-gradient(45deg, #ffffff 25%, transparent 25%), linear-gradient(315deg, #ffffff 25%, #e5e5f7 25%);
+  background-position: 8px 0, 8px 0, 0 0, 0 0;
+  background-size: 8px 8px;
+  background-repeat: repeat;
+  padding: 20px 20px 20px 20px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 20px rgba(1, 57, 58, 0.7);
+}
+
+.logo {
+  margin-left: 145px;
+  margin-right: 240px;
+}
+
+div {
+  max-width: 400px;
+  margin: 0 0 0 0;
+  background-color: #ffffff00;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+span.formerror {
+  color: #ff0000;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+}
+
+.button {
+  display: block;
+  width: 100%;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bolder;
+  background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+
+}
+
+.button:hover {
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  background-position: 100% 0;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.design {
+  position: relative;
+}
+
+.design input[type="text"] {
+  padding-right: 40px;
+}
+
+.design .formerror#email {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  font-size: 12px;
+  color: #ff0000;
+}
+
+.alreadyhave {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.alreadyhave a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.alreadyhave a:hover {
+  text-decoration: underline;
+}
